@@ -2,6 +2,7 @@
 import React, { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
+import Image from 'next/image'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -106,7 +107,7 @@ function ScrollOneSection () {
       </div>
 
       <section
-        className='relative margintop w-full h-screen graybg'
+        className='margintop relative w-full h-screen graybg'
         ref={textanimation}
       >
         <div className='relative w-full h-screen'>
@@ -141,7 +142,12 @@ function ScrollOneSection () {
             className='z-0 absolute inset-0 flex justify-center items-center'
             ref={thirdDiv}
           >
-            <img src='bg-icon.avif' alt='' style={{ width: '30vw' }} />
+            <Image
+              src='/bg-icon.avif'
+              alt='Background Icon'
+              width={300}
+              height={300}
+            />
           </div>
         </div>
       </section>
