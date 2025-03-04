@@ -179,9 +179,9 @@ function ScrollFourSection () {
         </div>
 
         <div className='rectangle' ref={rectangle}>
-          <div class='flex flex-row'>
-            <div class='bg-lime-500 basis-1/2'>01</div>
-            <div class='bg-sky-800 basis-1/2'>02</div>
+          <div className='flex flex-row'>
+            <div className='bg-lime-500 basis-1/2'>01</div>
+            <div className='bg-sky-800 basis-1/2'>02</div>
           </div>
         </div>
       </section>

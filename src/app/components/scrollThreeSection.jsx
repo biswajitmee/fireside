@@ -232,12 +232,7 @@ function ScrollThreeSection () {
                     </div>
 
                     <div className='relative flex flex-1 justify-center items-center rounded-xl h-full overflow-hidden'>
-                      {/* <img
-                        src='/middle-box-img.avif'
-                        alt='Main'
-                        className='rounded-xl w-full h-full object-cover'
-                        ref={bigImgRef2}
-                      /> */}
+                    
 
                       <div
                         className='absolute h-screen bigImg3'

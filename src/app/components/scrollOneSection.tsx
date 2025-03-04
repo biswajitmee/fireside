@@ -68,13 +68,7 @@ function ScrollOneSection () {
       scrub: 2
     })
 
-    // ScrollTrigger.create({
-    //   trigger: textanimation.current,
-    //   start: 'top 20%', // Start animation when the section reaches 80% of the viewport height
-    //   end: '+=300%', // Extend scroll duration for slower animations
-    //   animation: masterTimeline,
-    //   scrub: 1, // Smooth scrolling effect
-    // });
+  
   }, [])
 
   return (
