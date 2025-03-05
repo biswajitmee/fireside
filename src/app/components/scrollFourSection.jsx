@@ -190,12 +190,11 @@ function ScrollFourSection() {
                 <br />
                 Learn from fellow dentists, share real experiences, and find comfort knowing you’re part of a community that cares.
               </p>
-              <button className='mt-[4rem] bg-[#4F5348] px-8 py-4 rounded-xl text-[1.1rem text-white font-medium'>Community</button>
+              <button className='mt-[4rem] bg-[#4F5348] px-8 py-4 rounded-xl text-[1.1rem]text-white font-medium text-white'>Community</button>
             </div>
           </div>
         </div>
       </section>
-      <section className='-z-30 w-screen h-screen'></section>
     </>
   )
 }
