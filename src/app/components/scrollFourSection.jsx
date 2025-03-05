@@ -79,29 +79,29 @@ function ScrollFourSection() {
           className='leftBoxCircel z-10 absolute flex justify-center items-center p-4 rounded-full w-full h-full overflow-hidden -translate-y-1/2 transform'
           ref={leftCircel}
         >
-          <div className='flex flex-col justify-center items-center p-6 w-4/5 h-full centerDiv'>
-            <h1 className='text-4xl'>Solo</h1>
-            <p className='text-xl'>Retain autonomy your practice, your way.</p>
+          <div className='flex flex-col justify-center items-center p-6 w-4/5 h-full centerDiv bg-[#D8D4CF]'>
+            <h1 className='text-5xl font-IvyOraheadline2 text-[#232323]'>Solo</h1>
+            <p className='text-2xl font-IvyOraheadline2 text-[#7A7876] mt-1'>Retain autonomy your practice, your way.</p>
             <ul className='circelInside'>
               <li>
-                <ul>
-                  <li>Industry confusing by design</li>
+                <ul className='pl-12'>
+                  <li className='text-xl'>Industry confusing by design</li>
                 </ul>
               </li>
 
               <li>
-                <ul>
-                  <li>Pay too much or spend hours finding deals</li>
+                <ul className='pl-12'>
+                  <li className='text-xl'>Pay too much or spend hours finding deals</li>
                 </ul>
               </li>
               <li>
-                <ul>
-                  <li>No Support</li>
+                <ul className='pl-12'>
+                  <li className='text-xl'>No Support</li>
                 </ul>
               </li>
             </ul>
-            <p className='text-xl text-center'>
-              Are you doing things the right way? No-one <br /> to bounce ideas
+            <p className='text-2xl text-center font-IvyOraheadline2'>
+             <span className='font-IvyOraheadline text-[#EF4C23] font-medium'>Are you doing things the right way?</span> No-one <br /> to bounce ideas
               off of.
             </p>
           </div>
@@ -112,32 +112,31 @@ function ScrollFourSection() {
           ref={rightCircel}
         >
           <div className='flex flex-col justify-center items-center p-6 w-4/5 h-full centerDiv'>
-            <h1 className='text-4xl'>DSO</h1>
-            <p className='text-xl'>
-              Best practices for greater profitability, negotiated group
+            <h1 className='text-5xl font-IvyOraheadline2 text-[#232323]'>DSO</h1>
+            <p className='text-2xl text-[#7A7876] font-IvyOraheadline2 mt-2'>
+              Best practices for greater profitability, negotiated <br /> group
               savings, corporate support.
             </p>
             <ul className='circelInside'>
               <li>
-                <ul>
-                  <li>Intergration plan </li>
+                <ul className='pl-12'>
+                  <li className='text-xl'>Intergration plan</li>
                 </ul>
               </li>
 
               <li>
-                <ul>
-                  <li>Staff disruption</li>
+                <ul className='pl-12'>
+                  <li className='text-xl'>Staff disruption</li>
                 </ul>
               </li>
               <li>
-                <ul>
-                  <li>Lose autonomy</li>
+                <ul className='pl-12'>
+                  <li className='text-xl'>Lose autonomy</li>
                 </ul>
               </li>
             </ul>
-            <p className='text-xl text-center'>
-              Are you doing things the right way? No-one <br /> to bounce ideas
-              off of.
+            <p className='text-2xl text-center font-IvyOraheadline2 text-[#EF4C23]'>
+              You're selling your practice.
             </p>
           </div>
         </div>

@@ -5,7 +5,7 @@ import { ScrollTrigger, CustomEase } from "gsap/all"
 
 gsap.registerPlugin(ScrollTrigger, CustomEase)
 
-function ScrollTwoSection () {
+function ScrollTwoSection() {
   const pinref = useRef(null)
   const bgbackdiv = useRef(null)
   const imgMove = useRef(null)
@@ -253,7 +253,7 @@ function ScrollTwoSection () {
           <div className="titleAbsolute">
             <h1 ref={tltext1} className="font-InterTight lineheightfix">
               Running a dental practice <br />
-              can be 
+              can be
               <span className="font-IvyOraheadline">
                 exhausting and isolating
               </span>
