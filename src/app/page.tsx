@@ -10,8 +10,8 @@ export default function Home () {
  
 <ScrollOneSection/>
 <ScrollTwoSection/>
- {/* <ScrollThreeSection/>
- <ScrollFourSection/> */}
+ <ScrollThreeSection/>
+ <ScrollFourSection/>
 
     </>
   )
