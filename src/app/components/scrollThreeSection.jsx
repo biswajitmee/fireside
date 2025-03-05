@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/all'
 
 gsap.registerPlugin(ScrollTrigger)
 
-function ScrollThreeSection () {
+function ScrollThreeSection() {
   const pinContainer = useRef(null)
   const scrollContainerRef = useRef(null)
   const insidePin = useRef(null)
@@ -232,7 +232,7 @@ function ScrollThreeSection () {
                     </div>
 
                     <div className='relative flex flex-1 justify-center items-center rounded-xl h-full overflow-hidden'>
-                    
+
 
                       <div
                         className='absolute h-screen bigImg3'
@@ -336,12 +336,12 @@ function ScrollThreeSection () {
             </span>
           </h1>
           <div className='m-auto pt-14 w-2/3 text-xl text-center'>
-          <p>
-            Join Fireside, a warm and welcoming place where you can grow your <br/>
-            practice and your profits—without losing your independence.
-          </p>
+            <p>
+              Join Fireside, a warm and welcoming place where you can grow your <br />
+              practice and your profits—without losing your independence.
+            </p>
           </div>
-          
+
         </div>
       </section>
     </>

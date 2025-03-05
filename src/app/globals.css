@@ -696,6 +696,26 @@ video {
   margin-top: -70vh;
 }
 
+.mt-8{
+  margin-top: 2rem;
+}
+
+.mt-\[\]{
+  margin-top: ;
+}
+
+.mt-\[1rem\]{
+  margin-top: 1rem;
+}
+
+.mt-\[3rem\]{
+  margin-top: 3rem;
+}
+
+.mt-\[4rem\]{
+  margin-top: 4rem;
+}
+
 .block{
   display: block;
 }
@@ -758,6 +778,10 @@ video {
 
 .w-\[150vw\]{
   width: 150vw;
+}
+
+.w-\[32vw\]{
+  width: 32vw;
 }
 
 .w-\[50vw\]{
@@ -895,9 +919,22 @@ video {
   border-radius: 0.75rem;
 }
 
+.border{
+  border-width: 1px;
+}
+
+.border-r{
+  border-right-width: 1px;
+}
+
 .bg-\[\#2f3d2c\]{
   --tw-bg-opacity: 1;
   background-color: rgb(47 61 44 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#3C4235\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(60 66 53 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[\#F5F1EE\]{
@@ -925,11 +962,6 @@ video {
   background-color: rgb(22 163 74 / var(--tw-bg-opacity, 1));
 }
 
-.bg-lime-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(132 204 22 / var(--tw-bg-opacity, 1));
-}
-
 .bg-orange-600{
   --tw-bg-opacity: 1;
   background-color: rgb(234 88 12 / var(--tw-bg-opacity, 1));
@@ -950,11 +982,6 @@ video {
   background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
 }
 
-.bg-sky-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(7 89 133 / var(--tw-bg-opacity, 1));
-}
-
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -972,6 +999,15 @@ video {
 .bg-yellow-500{
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\]{
+  background-color: ;
+}
+
+.bg-\[\#4F5348\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(79 83 72 / var(--tw-bg-opacity, 1));
 }
 
 .object-cover{
@@ -999,6 +1035,26 @@ video {
   padding: 1.5rem;
 }
 
+.p-\[5rem\]{
+  padding: 5rem;
+}
+
+.p-5{
+  padding: 1.25rem;
+}
+
+.p-8{
+  padding: 2rem;
+}
+
+.p-\[\]{
+  padding: ;
+}
+
+.p-\[4rem\]{
+  padding: 4rem;
+}
+
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1007,6 +1063,16 @@ video {
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pl-14{
@@ -1043,6 +1109,11 @@ video {
   line-height: 2.5rem;
 }
 
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-7xl{
   font-size: 4.5rem;
   line-height: 1;
@@ -1062,8 +1133,42 @@ video {
   line-height: 1.75rem;
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-\[1rem\]{
+  font-size: 1rem;
+}
+
+.text-\[1\.5rem\]{
+  font-size: 1.5rem;
+}
+
+.text-\[2rem\]{
+  font-size: 2rem;
+}
+
+.text-\[1\.2rem\]{
+  font-size: 1.2rem;
+}
+
+.text-\[1\.1rem\]{
+  font-size: 1.1rem;
+}
+
 .font-medium{
   font-weight: 500;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .leading-10{
@@ -1072,6 +1177,34 @@ video {
 
 .leading-tight{
   line-height: 1.25;
+}
+
+.leading-6{
+  line-height: 1.5rem;
+}
+
+.leading-8{
+  line-height: 2rem;
+}
+
+.leading-\[\]{
+  line-height: ;
+}
+
+.leading-\[1rem\]{
+  line-height: 1rem;
+}
+
+.leading-\[2rem\]{
+  line-height: 2rem;
+}
+
+.leading-\[3rem\]{
+  line-height: 3rem;
+}
+
+.leading-\[3\.5rem\]{
+  line-height: 3.5rem;
 }
 
 .text-black{
@@ -1092,6 +1225,10 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\]{
+  color: ;
 }
 
 .antialiased{
@@ -1199,7 +1336,7 @@ section {
 }
 
 .titleAbsolute h1,
-    .titleAbsolute2 h1 {
+  .titleAbsolute2 h1 {
   font-size: 70px;
   color: #232323;
   line-height: 0.9;
@@ -1372,7 +1509,7 @@ section {
 }
 
 .section1,
-    .section3 {
+  .section3 {
   width: 100vw;
 }
 

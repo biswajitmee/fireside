@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/all'
 
 gsap.registerPlugin(ScrollTrigger)
 
-function ScrollFourSection () {
+function ScrollFourSection() {
   const pinCircel = useRef(null)
   const leftCircel = useRef(null)
   const rightCircel = useRef(null)
@@ -179,9 +179,19 @@ function ScrollFourSection () {
         </div>
 
         <div className='rectangle' ref={rectangle}>
-          <div className='flex flex-row'>
-            <div className='bg-lime-500 basis-1/2'>01</div>
-            <div className='bg-sky-800 basis-1/2'>02</div>
+          <div className='flex flex-row items-center bg-[#3C4235] p-[5rem]'>
+            <div className='basis-1/2 flex justify-center items-center'>
+              <img className='w-[32vw]' src="/bg-red.avif" alt="" />
+            </div>
+            <div className='basis-1/2 p-[4rem]'>
+              <h3 className='text-5xl font-IvyOraheadline2 text-white leading-[3.5rem]'><span className='font-IvyOraheadline'>Lay the right foundation</span><br /> for your practice.</h3>
+              <p className='text-lg mt-8 text-white'>Whether it’s setting up your practice or finding ways to save, we’re here to make the process smoother and less stressful.
+                <br />
+                <br />
+                Learn from fellow dentists, share real experiences, and find comfort knowing you’re part of a community that cares.
+              </p>
+              <button className='mt-[4rem] bg-[#4F5348] px-8 py-4 rounded-xl text-[1.1rem text-white font-medium'>Community</button>
+            </div>
           </div>
         </div>
       </section>
@@ -190,4 +200,4 @@ function ScrollFourSection () {
   )
 }
 
-export default ScrollFourSection
+export default ScrollFourSection;
