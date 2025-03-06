@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <>
       <ScrollOneSection />
-      {/* <ScrollTwoSection />
-      <ScrollThreeSection /> */}
+      <ScrollTwoSection />
+      <ScrollThreeSection />
       <ScrollFourSection />
       <ScrollFiveSection />
     </>
