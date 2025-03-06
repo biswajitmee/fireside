@@ -664,6 +664,14 @@ video {
   margin-left: 10rem;
 }
 
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
 .mt-4{
   margin-top: 1rem;
 }
@@ -698,14 +706,6 @@ video {
 
 .mt-\[4rem\]{
   margin-top: 4rem;
-}
-
-.mt-1{
-  margin-top: 0.25rem;
-}
-
-.mt-2{
-  margin-top: 0.5rem;
 }
 
 .block{
@@ -930,6 +930,11 @@ video {
   background-color: rgb(79 83 72 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#D8D4CF\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 212 207 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[\#F5F1EE\]{
   --tw-bg-opacity: 1;
   background-color: rgb(245 241 238 / var(--tw-bg-opacity, 1));
@@ -992,11 +997,6 @@ video {
 .bg-yellow-500{
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\#D8D4CF\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(216 212 207 / var(--tw-bg-opacity, 1));
 }
 
 .object-cover{
@@ -1062,6 +1062,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pl-12{
+  padding-left: 3rem;
+}
+
 .pl-14{
   padding-left: 3.5rem;
 }
@@ -1078,10 +1082,6 @@ video {
   padding-top: 3.3rem;
 }
 
-.pl-12{
-  padding-left: 3rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -1096,6 +1096,11 @@ video {
 
 .font-IvyOraheadline2{
   font-family: IvyOraheadline2, sans-serif;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl{
@@ -1140,11 +1145,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .font-medium{
   font-weight: 500;
 }
@@ -1170,6 +1170,16 @@ video {
   color: rgb(35 35 35 / var(--tw-text-opacity, 1));
 }
 
+.text-\[\#7A7876\]{
+  --tw-text-opacity: 1;
+  color: rgb(122 120 118 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#EF4C23\]{
+  --tw-text-opacity: 1;
+  color: rgb(239 76 35 / var(--tw-text-opacity, 1));
+}
+
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
@@ -1188,16 +1198,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#7A7876\]{
-  --tw-text-opacity: 1;
-  color: rgb(122 120 118 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#EF4C23\]{
-  --tw-text-opacity: 1;
-  color: rgb(239 76 35 / var(--tw-text-opacity, 1));
 }
 
 .antialiased{
