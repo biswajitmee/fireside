@@ -101,7 +101,7 @@ function ScrollFourSection() {
               </li>
             </ul>
             <p className='text-2xl text-center font-IvyOraheadline2'>
-             <span className='font-IvyOraheadline text-[#EF4C23] font-medium'>Are you doing things the right way?</span> No-one <br /> to bounce ideas
+              <span className='font-IvyOraheadline text-[#EF4C23] font-medium'>Are you doing things the right way?</span> No-one <br /> to bounce ideas
               off of.
             </p>
           </div>
@@ -146,34 +146,40 @@ function ScrollFourSection() {
           ref={middleCircel}
         ></div>
         <div
-          className='z-10 flex flex-col justify-center items-center p-6 centerDiv3'
+          className='z-10 flex flex-col justify-center items-center p-6 centerDiv3 pt-12'
           ref={middleCircelContent}
         >
-          <h1 className='text-4xl text-center'>Solo</h1>
-          <p className='text-xl text-center'>
-            Retain autonomy your practice, your way.
+          <div className='flex items-center justify-center'>
+            <div>
+              <img className='w-12 items-center' src="/s4firsideLogo.png" alt="" />
+            </div>
+            <div>
+              <h4 className='text-[2.857vw] ml-4 text-white font-IvyOraheadline2'>Fireside</h4>
+            </div>
+          </div>
+          <p className='text-[1.45vw] text-center text-[#AAA9A3] font-IvyOraheadline2 text-[1.45vw]'>
+            Profitability and community.
           </p>
           <ul className='circelInside'>
             <li>
-              <ul>
-                <li>Industry confusing by design</li>
+              <ul className='pl-12'>
+                <li className='text-[1.19vw] text-white'>Quick win savings + best practices</li>
               </ul>
             </li>
 
             <li>
-              <ul>
-                <li>Pay too much or spend hours finding deals</li>
+              <ul className='pl-12'>
+                <li className='text-[1.19vw]  text-white'>A place to connect</li>
               </ul>
             </li>
             <li>
-              <ul>
-                <li>No Support</li>
+              <ul className='pl-12'>
+                <li className='text-[1.19vw] text-white'>Ask question + get advice</li>
               </ul>
             </li>
           </ul>
-          <p className='text-xl text-center'>
-            Are you doing things the right way? No-one <br /> to bounce ideas
-            off of.
+          <p className='text-[1.45vw] text-center font-IvyOraheadline2 text-white'>
+            All while <span className='font-IvyOraheadline text-[#ef4c23]'> staying independent!</span>
           </p>
         </div>
 
