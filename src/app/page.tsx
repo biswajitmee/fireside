@@ -4,6 +4,7 @@ import ScrollTwoSection from './components/scrollTwoSection'
 import ScrollThreeSection from './components/scrollThreeSection'
 import ScrollFourSection from './components/scrollFourSection'
 import ScrollFiveSection from "./components/ScrollFiveSection";
+import ScrollSixSection from "./components/ScrollSixSection";
 export default function Home() {
   return (
     <>
@@ -12,6 +13,7 @@ export default function Home() {
       <ScrollThreeSection />
       <ScrollFourSection />
       <ScrollFiveSection />
+      <ScrollSixSection />
     </>
   )
 }
