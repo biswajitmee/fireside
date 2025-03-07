@@ -51,7 +51,7 @@ const ScrollSevenSection: React.FC = () => {
     
     
     <div
-        className='relative rounded-2xl w-full h-screen overflow-hidden heroSection'
+        className='relative rounded-2xl w-full h-screen overflow-hidden heroSection mt-[20vh]'
        
       >
         {/* <video
