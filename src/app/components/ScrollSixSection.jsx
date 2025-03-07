@@ -3,7 +3,8 @@ import React from 'react';
 const ScrollSixSection = () => {
   return (
     <>
-      <section className='flex items-center h-[75vh] w-full px-[6rem] gap-x-4'>
+      {/* mt-[-28vh] */}
+      <section className='flex items-center h-[75vh] w-full px-[6rem] gap-x-4 mt-[-28vh]'>
         {/* BOX ONE */}
         <div
           className='flex-1 h-full relative group transition-all duration-1000 hover:flex-[1.2]'
