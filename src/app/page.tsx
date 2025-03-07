@@ -15,6 +15,7 @@ export default function Home () {
   return (
     <>
       <ClientWrapper>
+        <div className='bg-[#F3EFEC]'>
         <ScrollOneSection />
         <ScrollTwoSection />
         <ScrollThreeSection />
@@ -22,6 +23,8 @@ export default function Home () {
         <ScrollFiveSection />
         <ScrollSixSection />
         <ScrollSevenSection />
+        </div>
+        <div className="h-[80vh]"></div>
       </ClientWrapper>
     </>
   )
