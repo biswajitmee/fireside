@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
-import SmoothScroller from './components/smoothScroller'
- import NavBar from './components/navBar'
+import NavBar from './components/navBar'
+import ClientWrapper from './clientWrapper'
+
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
@@ -30,8 +31,9 @@ export default function RootLayout ({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-       <NavBar />
-        <SmoothScroller>{children}</SmoothScroller>
+        <NavBar /> 
+        <ClientWrapper>{children}</ClientWrapper>{' '}
+         
       </body>
     </html>
   )

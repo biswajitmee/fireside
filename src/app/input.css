@@ -399,12 +399,13 @@
   ul.circelInside {
     padding: 35px;
     width: 100%;
+
   }
 
   .circelInside li {
     width: 100%;
     padding: 25px 35px;
-    background-color: rgba(227, 224, 221, 0.091);
+    background-color: rgba(227, 224, 221, 0.376);
     margin: 10px;
     border-radius: 10px;
   }
@@ -420,9 +421,9 @@
   .centerDiv3 {
     display: none;
     height: 90vh;
-    width: 75vh;
+    width: 80vh;
     margin: auto;
     opacity: 0;
   }
-
+ 
 }
