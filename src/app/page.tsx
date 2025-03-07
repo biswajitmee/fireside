@@ -1,22 +1,27 @@
 import React from 'react'
+import ClientWrapper from './clientWrapper'
+
+
 import ScrollOneSection from './components/scrollOneSection'
 import ScrollTwoSection from './components/scrollTwoSection'
 import ScrollThreeSection from './components/scrollThreeSection'
 import ScrollFourSection from './components/scrollFourSection'
-import ScrollFiveSection from "./components/ScrollFiveSection";
+import ScrollFiveSection from './components/ScrollFiveSection'
+import ScrollSixSection from './components/ScrollSixSection'
 import ScrollSevenSection from './components/scrollSevenSection'
 
-import ClientWrapper from './clientWrapper'
-export default function Home() {
+
+export default function Home () {
   return (
     <>
-  <ClientWrapper>
-      <ScrollOneSection />
-      <ScrollTwoSection />
-      <ScrollThreeSection />
-      <ScrollFourSection />
-      <ScrollFiveSection />
-      <ScrollSevenSection/>
+      <ClientWrapper>
+        <ScrollOneSection />
+        <ScrollTwoSection />
+        <ScrollThreeSection />
+        <ScrollFourSection />
+        <ScrollFiveSection />
+        <ScrollSixSection />
+        <ScrollSevenSection />
       </ClientWrapper>
     </>
   )

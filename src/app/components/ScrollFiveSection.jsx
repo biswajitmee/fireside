@@ -3,7 +3,7 @@ import React from 'react';
 const ScrollFiveSection = () => {
   return (
     <>
-      <section className='px-[7rem] pt-[10rem]'>
+      <section className='px-[6rem] pt-[10rem]'>
         <div>
           <div>
             <h2 className='text-[4.6vw] font-IvyOraheadline2 leading-[5.5rem] text-[#232323]'>Meet a few <br /> of our members</h2>
