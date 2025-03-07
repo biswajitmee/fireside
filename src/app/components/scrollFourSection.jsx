@@ -157,7 +157,7 @@ function ScrollFourSection() {
               <h4 className='text-[2.857vw] ml-4 text-white font-IvyOraheadline2'>Fireside</h4>
             </div>
           </div>
-          <p className='text-[1.45vw] text-center text-[#AAA9A3] font-IvyOraheadline2 text-[1.45vw]'>
+          <p className='text-[1.45vw] text-center text-[#AAA9A3] font-IvyOraheadline2'>
             Profitability and community.
           </p>
           <ul className='circelInside'>
