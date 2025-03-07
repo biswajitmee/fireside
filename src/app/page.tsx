@@ -9,9 +9,10 @@ import ScrollFourSection from './components/scrollFourSection'
 import ScrollFiveSection from './components/ScrollFiveSection'
 import ScrollSixSection from './components/ScrollSixSection'
 import ScrollSevenSection from './components/scrollSevenSection'
+import ScrollNineSection from './components/ScrollNinSection'
 
 
-export default function Home () {
+export default function Home() {
   return (
     <>
       <ClientWrapper>
@@ -22,6 +23,7 @@ export default function Home () {
         <ScrollFiveSection />
         <ScrollSixSection />
         <ScrollSevenSection />
+        <ScrollNineSection />
       </ClientWrapper>
     </>
   )
