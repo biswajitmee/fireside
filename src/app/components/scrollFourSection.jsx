@@ -79,9 +79,9 @@ function ScrollFourSection() {
           className='leftBoxCircel z-10 absolute flex justify-center items-center p-4 rounded-full w-full h-full overflow-hidden -translate-y-1/2 transform'
           ref={leftCircel}
         >
-          <div className='flex flex-col justify-center items-center p-6 w-4/5 h-full centerDiv bg-[#D8D4CF]'>
-            <h1 className='text-5xl font-IvyOraheadline2 text-[#232323]'>Solo</h1>
-            <p className='text-2xl font-IvyOraheadline2 text-[#7A7876] mt-1'>Retain autonomy your practice, your way.</p>
+          <div className='flex flex-col justify-center items-center bg-[#D8D4CF] p-6 w-4/5 h-full centerDiv'>
+            <h1 className='font-IvyOraheadline2 text-[#232323] text-5xl'>Solo</h1>
+            <p className='mt-1 font-IvyOraheadline2 text-[#7A7876] text-2xl'>Retain autonomy your practice, your way.</p>
             <ul className='circelInside'>
               <li>
                 <ul className='pl-12'>
@@ -100,8 +100,8 @@ function ScrollFourSection() {
                 </ul>
               </li>
             </ul>
-            <p className='text-2xl text-center font-IvyOraheadline2'>
-              <span className='font-IvyOraheadline text-[#EF4C23] font-medium'>Are you doing things the right way?</span> No-one <br /> to bounce ideas
+            <p className='font-IvyOraheadline2 text-2xl text-center'>
+              <span className='font-IvyOraheadline font-medium text-[#EF4C23]'>Are you doing things the right way?</span> No-one <br /> to bounce ideas
               off of.
             </p>
           </div>
@@ -112,8 +112,8 @@ function ScrollFourSection() {
           ref={rightCircel}
         >
           <div className='flex flex-col justify-center items-center p-6 w-4/5 h-full centerDiv'>
-            <h1 className='text-5xl font-IvyOraheadline2 text-[#232323]'>DSO</h1>
-            <p className='text-2xl text-[#7A7876] font-IvyOraheadline2 mt-2'>
+            <h1 className='font-IvyOraheadline2 text-[#232323] text-5xl'>DSO</h1>
+            <p className='mt-2 font-IvyOraheadline2 text-[#7A7876] text-2xl'>
               Best practices for greater profitability, negotiated <br /> group
               savings, corporate support.
             </p>
@@ -135,7 +135,7 @@ function ScrollFourSection() {
                 </ul>
               </li>
             </ul>
-            <p className='text-2xl text-center font-IvyOraheadline2 text-[#EF4C23]'>
+            <p className='font-IvyOraheadline2 text-[#EF4C23] text-2xl text-center'>
               You're selling your practice.
             </p>
           </div>
@@ -146,18 +146,18 @@ function ScrollFourSection() {
           ref={middleCircel}
         ></div>
         <div
-          className='z-10 flex flex-col justify-center items-center p-6 centerDiv3 pt-12'
+          className='z-10 flex flex-col justify-center items-center p-6 pt-12 centerDiv3'
           ref={middleCircelContent}
         >
-          <div className='flex items-center justify-center'>
+          <div className='flex justify-center items-center'>
             <div>
-              <img className='w-12 items-center' src="/s4firsideLogo.png" alt="" />
+              <img className='items-center w-12' src="/s4firsideLogo.png" alt="" />
             </div>
             <div>
-              <h4 className='text-[2.857vw] ml-4 text-white font-IvyOraheadline2'>Fireside</h4>
+              <h4 className='ml-4 font-IvyOraheadline2 text-[2.857vw] text-white'>Fireside</h4>
             </div>
           </div>
-          <p className='text-[1.45vw] text-center text-[#AAA9A3] font-IvyOraheadline2 text-[1.45vw]'>
+          <p className='font-IvyOraheadline2 text-[#AAA9A3] text-[1.45vw] text-center'>
             Profitability and community.
           </p>
           <ul className='circelInside'>
@@ -169,7 +169,7 @@ function ScrollFourSection() {
 
             <li>
               <ul className='pl-12'>
-                <li className='text-[1.19vw]  text-white'>A place to connect</li>
+                <li className='text-[1.19vw] text-white'>A place to connect</li>
               </ul>
             </li>
             <li>
@@ -178,24 +178,24 @@ function ScrollFourSection() {
               </ul>
             </li>
           </ul>
-          <p className='text-[1.45vw] text-center font-IvyOraheadline2 text-white'>
+          <p className='font-IvyOraheadline2 text-[1.45vw] text-white text-center'>
             All while <span className='font-IvyOraheadline text-[#ef4c23]'> staying independent!</span>
           </p>
         </div>
 
         <div className='rectangle' ref={rectangle}>
           <div className='flex flex-row items-center bg-[#3C4235] p-[5rem]'>
-            <div className='basis-1/2 flex justify-center items-center'>
+            <div className='flex justify-center items-center basis-1/2'>
               <img className='w-[32vw]' src="/bg-red.avif" alt="" />
             </div>
-            <div className='basis-1/2 p-[4rem]'>
-              <h3 className='text-5xl font-IvyOraheadline2 text-white leading-[3.5rem]'><span className='font-IvyOraheadline'>Lay the right foundation</span><br /> for your practice.</h3>
-              <p className='text-lg mt-8 text-white'>Whether it’s setting up your practice or finding ways to save, we’re here to make the process smoother and less stressful.
+            <div className='p-[4rem] basis-1/2'>
+              <h3 className='font-IvyOraheadline2 text-white text-5xl leading-[3.5rem]'><span className='font-IvyOraheadline'>Lay the right foundation</span><br /> for your practice.</h3>
+              <p className='mt-8 text-white text-lg'>Whether it's setting up your practice or finding ways to save, we're here to make the process smoother and less stressful.
                 <br />
                 <br />
-                Learn from fellow dentists, share real experiences, and find comfort knowing you’re part of a community that cares.
+                Learn from fellow dentists, share real experiences, and find comfort knowing you're part of a community that cares.
               </p>
-              <button className='mt-[4rem] bg-[#4F5348] px-8 py-4 rounded-xl text-[1.1rem]text-white font-medium text-white'>Community</button>
+              <button className='bg-[#4F5348] mt-[4rem] px-8 py-4 rounded-xl font-medium text-[1.1rem]text-white text-white'>Community</button>
             </div>
           </div>
         </div>

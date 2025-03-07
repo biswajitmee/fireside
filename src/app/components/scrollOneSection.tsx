@@ -15,61 +15,60 @@ function ScrollOneSection () {
   const thirdDiv = useRef(null) // Ref for the third absolute div
 
   useEffect(() => {
-    gsap.set(firstDiv.current, { autoAlpha: 0, scale: 0.8 })
-    gsap.set(secondDiv.current, { autoAlpha: 0, scale: 0.8 })
-    gsap.set(thirdDiv.current, { autoAlpha: 0, scale: 1.2 })
-
-    const firstDivTimeline = gsap.timeline()
-    const firstDivTimeline1 = gsap.timeline()
-    const secondDivTimeline = gsap.timeline()
-    const thirdDivTimeline = gsap.timeline()
-
-    // Add animations to the firstDivTimeline
-    firstDivTimeline.fromTo(
-      firstDiv.current,
-      { autoAlpha: 0, scale: 1, duration: 10 },
-      { autoAlpha: 1, scale: 1.7, duration: 15, ease: 'power1.in' } // Slower animation
-    )
-
-    firstDivTimeline1.fromTo(
-      firstDiv.current,
-      { autoAlpha: 1, delay: 50, duration: 10 },
-      { autoAlpha: 0, duration: 2 }
-    )
-
-    // Add animations to the secondDivTimeline
-    secondDivTimeline.fromTo(
-      secondDiv.current,
-      { autoAlpha: 0, scale: 1.3, duration: 20 },
-      { autoAlpha: 1, scale: 1.7, delay: 5, duration: 15, ease: 'power1.in' } // Slower animation
-    )
-
-    // Add animations to the thirdDivTimeline
-    thirdDivTimeline.fromTo(
-      thirdDiv.current,
-      { autoAlpha: 0, scale: 1.3, duration: 13 },
-      { autoAlpha: 1, scale: 1, duration: 20, delay: 20 } // Slower animation
-    )
-
-    // Create a master timeline and combine the individual timelines
-    const masterTimeline = gsap.timeline()
-    masterTimeline
-      .add(firstDivTimeline)
-      .add(firstDivTimeline1, '+=15')
-      .add(secondDivTimeline, '-=2') // Overlap by 2 seconds for smoother transitions
-      .add(thirdDivTimeline, '-=4') // Overlap by 2 seconds for smoother transitions
-
-    ScrollTrigger.create({
-      trigger: textanimation.current,
-      pin: true, // Pin the section
-      start: 'top top', // Pin when the section reaches the top of the viewport
-      end: '+=350%', // Extend pin duration to match the animations
-      animation: masterTimeline,
-      scrub: 2
-    })
-
+    let ctx = gsap.context(() => {
+      gsap.set(firstDiv.current, { autoAlpha: 0, scale: 0.8 });
+      gsap.set(secondDiv.current, { autoAlpha: 0, scale: 0.8 });
+      gsap.set(thirdDiv.current, { autoAlpha: 0, scale: 1.2 });
   
-  }, [])
+      const firstDivTimeline = gsap.timeline();
+      const firstDivTimeline1 = gsap.timeline();
+      const secondDivTimeline = gsap.timeline();
+      const thirdDivTimeline = gsap.timeline();
+  
+      firstDivTimeline.fromTo(
+        firstDiv.current,
+        { autoAlpha: 0, scale: 1, duration: 10 },
+        { autoAlpha: 1, scale: 1.7, duration: 15, ease: 'power1.in' }
+      );
+  
+      firstDivTimeline1.fromTo(
+        firstDiv.current,
+        { autoAlpha: 1, delay: 50, duration: 10 },
+        { autoAlpha: 0, duration: 2 }
+      );
+  
+      secondDivTimeline.fromTo(
+        secondDiv.current,
+        { autoAlpha: 0, scale: 1.3, duration: 20 },
+        { autoAlpha: 1, scale: 1.7, delay: 5, duration: 15, ease: 'power1.in' }
+      );
+  
+      thirdDivTimeline.fromTo(
+        thirdDiv.current,
+        { autoAlpha: 0, scale: 1.3, duration: 13 },
+        { autoAlpha: 1, scale: 1, duration: 20, delay: 20 }
+      );
+  
+      const masterTimeline = gsap.timeline();
+      masterTimeline
+        .add(firstDivTimeline)
+        .add(firstDivTimeline1, '+=15')
+        .add(secondDivTimeline, '-=2')
+        .add(thirdDivTimeline, '-=4');
+  
+      ScrollTrigger.create({
+        trigger: textanimation.current,
+        pin: true,
+        start: 'top top',
+        end: '+=350%',
+        animation: masterTimeline,
+        scrub: 2,
+      });
+    }, vodeoSection); // Scope animations to this component
+  
+    return () => ctx.revert(); // Cleanup animations on unmount
+  }, []);
+  
 
   return (
     <>
@@ -113,8 +112,7 @@ function ScrollOneSection () {
               <span>A membership community for the</span>
               <br />
               <span>
-                future{' '}
-                <span className='font-IvyOraheadline'>
+                future <span className='font-IvyOraheadline'>
                   of pediatric dentistry
                 </span>
               </span>
