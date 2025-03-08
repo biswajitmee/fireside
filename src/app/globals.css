@@ -1171,6 +1171,10 @@ video {
   padding-top: 3.3rem;
 }
 
+.pl-4{
+  padding-left: 1rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1252,6 +1256,11 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold{
@@ -1767,5 +1776,15 @@ ul.circelInside {
 @media (min-width: 1024px){
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:text-7xl{
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }

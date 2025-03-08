@@ -84,8 +84,8 @@ function ScrollOneSection () {
           loop
         />
 
-        <div className='bottom-14 left-8 z-10 absolute pl-14 text-white'>
-          <h1 className='font-InterTight text-7xl'>
+        <div className='bottom-14 left-8 z-10 absolute pl-4 text-white'>
+          <h1 className='font-InterTight text-4xl lg:text-7xl'>
             <span className='block'>Want more</span>
             <span className='block'>for your practice?</span>
             <span className='block font-IvyOraheadline'>
@@ -106,7 +106,7 @@ function ScrollOneSection () {
         <div className='z-50 relative w-full h-screen'>
           <div className='z-50 absolute inset-0 flex justify-center items-center'>
             <h1
-              className='font-IvyOraheadline2 text-center heading'
+              className='font-IvyOraheadline2 text-xs lg:text-4xl text-center heading'
               ref={firstDiv}
             >
               <span>A membership community for the</span>
