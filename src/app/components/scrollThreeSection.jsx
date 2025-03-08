@@ -139,7 +139,23 @@ function ScrollThreeSection() {
 
   return (
     <>
-      <div className='h-screen pinContainer' ref={pinContainer} id='pinSection'>
+      <section className='flex justify-center items-center h-screen graybg'>
+        <div className='flex flex-col items-center text-center'>
+          <div className='textBox'>
+            <h1 className='font-IvyOraheadline2 text-7xl darkFont'>
+              The first membership group designed specifically to help pediatric dentists
+              <span className='font-IvyOraheadline'> like you grow</span>
+            </h1>
+          </div>
+          <br />
+          <div className='textBox2'>
+            <p>
+              Fireside is built for dentists, by dentists— you’ll find meaningful savings, resources, and a network of peers who understand the unique challenges you face every day.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div className='z-50 h-screen pinContainer' ref={pinContainer} id='pinSection'>
         <div
           className='flex flex-row h-screen scrollContainer'
           ref={scrollContainerRef}
@@ -324,7 +340,7 @@ function ScrollThreeSection() {
       </div>
 
       <section
-        className='-z-10 flex justify-center items-center mt-[-70vh] w-screen h-[60vh]'
+        className='z-0 flex justify-center items-center mt-[-70vh] w-screen h-[60vh]'
         ref={insidePin}
       >
         <div className='pt-50 max-w-[80%]'>
