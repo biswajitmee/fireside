@@ -51,17 +51,11 @@ const ScrollSevenSection: React.FC = () => {
     
     
     <div
-        className='relative rounded-2xl w-full h-screen overflow-hidden heroSection mt-[20vh]'
+        className='relative mt-40 rounded-3xl w-full h-screen overflow-hidden heroSection'
        
       >
-        {/* <video
-          className='top-0 left-0 absolute w-full h-full object-cover'
-          src='/hero-section-video.mp4'
-          autoPlay
-          muted
-          loop
-        /> */}
-        <img src="backgroundForrest.avif" className="object-cover" />
+       
+        <img data-speed="0.8" src="backgroundForrest.avif" className="bg-top object-cover" />
 
         <div className='bottom-14 left-8 z-10 absolute pl-14 text-white'>
           <h1 className='font-InterTight text-7xl'>
@@ -116,7 +110,7 @@ const ScrollSevenSection: React.FC = () => {
         </div>
       </div>
     </section>
-      
+     
       </>
    
 

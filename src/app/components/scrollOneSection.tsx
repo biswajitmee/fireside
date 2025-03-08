@@ -73,7 +73,7 @@ function ScrollOneSection () {
   return (
     <>
       <div
-        className='relative w-full h-screen overflow-hidden heroSection'
+        className='z-50 relative w-full h-screen overflow-hidden heroSection'
         ref={vodeoSection}
       >
         <video
@@ -100,11 +100,11 @@ function ScrollOneSection () {
       </div>
 
       <section
-        className='margintop relative w-full h-screen graybg'
+        className='margintop z-40 relative w-full h-screen graybg'
         ref={textanimation}
       >
-        <div className='relative w-full h-screen'>
-          <div className='z-10 absolute inset-0 flex justify-center items-center'>
+        <div className='z-50 relative w-full h-screen'>
+          <div className='z-50 absolute inset-0 flex justify-center items-center'>
             <h1
               className='font-IvyOraheadline2 text-center heading'
               ref={firstDiv}
@@ -119,7 +119,7 @@ function ScrollOneSection () {
             </h1>
           </div>
 
-          <div className='z-10 absolute inset-0 flex justify-center items-center'>
+          <div className='z-50 absolute inset-0 flex justify-center items-center'>
             <h1
               className='font-IvyOraheadline2 text-center heading'
               ref={secondDiv}
