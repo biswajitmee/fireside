@@ -18,7 +18,7 @@ export default function Home () {
         <div className='bg-[#F3EFEC]'>
         <ScrollOneSection />
         <ScrollTwoSection />
-        <ScrollThreeSection />
+        {/* <ScrollThreeSection /> */}
         <ScrollFourSection />
         <ScrollFiveSection />
         <ScrollSixSection />

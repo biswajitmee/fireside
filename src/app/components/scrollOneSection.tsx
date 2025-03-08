@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 function ScrollOneSection () {
   const vodeoSection = useRef(null)
-  const textanimation = useRef(null)
+  const textanimationPin = useRef(null)
 
   const firstDiv = useRef(null) // Ref for the first absolute div
   const secondDiv = useRef(null) // Ref for the second absolute div
@@ -57,13 +57,17 @@ function ScrollOneSection () {
         .add(thirdDivTimeline, '-=4');
   
       ScrollTrigger.create({
-        trigger: textanimation.current,
+        trigger: textanimationPin.current,
         pin: true,
         start: 'top top',
         end: '+=350%',
         animation: masterTimeline,
         scrub: 2,
+        invalidateOnRefresh: true,
+        pinType: "fixed", 
+        pinSpacing: false
       });
+      ScrollTrigger.refresh();
     }, vodeoSection); // Scope animations to this component
   
     return () => ctx.revert(); // Cleanup animations on unmount
@@ -100,8 +104,8 @@ function ScrollOneSection () {
       </div>
 
       <section
-        className='margintop z-40 relative w-full h-screen graybg'
-        ref={textanimation}
+        className='margintop z-40 relative bg-red-800 w-full h-screen'
+        ref={textanimationPin}
       >
         <div className='z-50 relative w-full h-screen'>
           <div className='z-50 absolute inset-0 flex justify-center items-center'>

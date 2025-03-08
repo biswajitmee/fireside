@@ -17,6 +17,8 @@ export default function SmoothScroller({
       content: '#smooth-content',
       smooth: 2,
       effects: true,
+      normalizeScroll: true,  // Ensures consistent scrolling behavior
+    smoothTouch: 0.1,  // Enables smooth scrolling on touch devices
        
     });
 

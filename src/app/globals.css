@@ -1066,6 +1066,11 @@ video {
   background-color: rgb(255 255 255 / 0.7);
 }
 
+.bg-red-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity, 1));
+}
+
 .bg-top{
   background-position: top;
 }
