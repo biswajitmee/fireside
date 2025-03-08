@@ -762,20 +762,12 @@ video {
   margin-top: -70vh;
 }
 
-.mt-\[4rem\]{
-  margin-top: 4rem;
-}
-
-.mt-\[\]{
-  margin-top: ;
-}
-
-.mt-\[20\]{
-  margin-top: 20;
-}
-
 .mt-\[20vh\]{
   margin-top: 20vh;
+}
+
+.mt-\[4rem\]{
+  margin-top: 4rem;
 }
 
 .block{
