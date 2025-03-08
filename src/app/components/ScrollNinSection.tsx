@@ -3,7 +3,7 @@ import React from 'react';
 const ScrollNinSection = () => {
   return (
     <>
-      <section className='mt-32'>
+      <section className='mt-32 bg-[#4E4A46]'>
         <div className='w-[99vw] h-full relative'>
           <video
             className='object-cover w-full h-full rounded-3xl'

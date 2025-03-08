@@ -17,13 +17,14 @@ export default function Home() {
     <>
       <ClientWrapper>
         <div className='bg-[#F3EFEC]'>
-        <ScrollOneSection />
-        <ScrollTwoSection />
-        <ScrollThreeSection />
-        <ScrollFourSection />
-        <ScrollFiveSection />
-        <ScrollSixSection />
-        <ScrollSevenSection />
+          <ScrollOneSection />
+          {/* <ScrollTwoSection />
+          <ScrollThreeSection />
+          <ScrollFourSection />
+          <ScrollFiveSection />
+          <ScrollSixSection />
+          <ScrollSevenSection /> */}
+          <ScrollNineSection />
         </div>
         <div className="h-[80vh]"></div>
       </ClientWrapper>
