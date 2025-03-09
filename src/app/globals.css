@@ -650,6 +650,10 @@ video {
   left: 2rem;
 }
 
+.left-\[10vw\]{
+  left: 10vw;
+}
+
 .right-0{
   right: 0px;
 }
@@ -672,10 +676,6 @@ video {
 
 .top-8{
   top: 2rem;
-}
-
-.-z-10{
-  z-index: -10;
 }
 
 .-z-40{
@@ -874,6 +874,10 @@ video {
   width: 32vw;
 }
 
+.w-\[80vw\]{
+  width: 80vw;
+}
+
 .w-full{
   width: 100%;
 }
@@ -1066,11 +1070,6 @@ video {
   background-color: rgb(255 255 255 / 0.7);
 }
 
-.bg-red-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(153 27 27 / var(--tw-bg-opacity, 1));
-}
-
 .bg-top{
   background-position: top;
 }
@@ -1160,6 +1159,10 @@ video {
   padding-left: 3.5rem;
 }
 
+.pl-4{
+  padding-left: 1rem;
+}
+
 .pt-12{
   padding-top: 3rem;
 }
@@ -1174,10 +1177,6 @@ video {
 
 .pt-\[3\.3rem\]{
   padding-top: 3.3rem;
-}
-
-.pl-4{
-  padding-left: 1rem;
 }
 
 .text-center{
@@ -1431,10 +1430,6 @@ section {
 
 .orngColor {
   color: #EF4C23;
-}
-
-.heading {
-  font-size: 30px;
 }
 
 .margintop {
@@ -1779,17 +1774,30 @@ ul.circelInside {
 }
 
 @media (min-width: 1024px){
+  .lg\:left-\[28vw\]{
+    left: 28vw;
+  }
+
+  .lg\:w-\[44vw\]{
+    width: 44vw;
+  }
+
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .lg\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
-  }
-
-  .lg\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }

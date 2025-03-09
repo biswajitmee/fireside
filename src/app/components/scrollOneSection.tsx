@@ -27,8 +27,8 @@ function ScrollOneSection () {
   
       firstDivTimeline.fromTo(
         firstDiv.current,
-        { autoAlpha: 0, scale: 1, duration: 10 },
-        { autoAlpha: 1, scale: 1.7, duration: 15, ease: 'power1.in' }
+        { autoAlpha: 0, scale: 0.3, duration: 10 },
+        { autoAlpha: 1, scale: 1, duration: 15, ease: 'power1.in' }
       );
   
       firstDivTimeline1.fromTo(
@@ -39,8 +39,8 @@ function ScrollOneSection () {
   
       secondDivTimeline.fromTo(
         secondDiv.current,
-        { autoAlpha: 0, scale: 1.3, duration: 20 },
-        { autoAlpha: 1, scale: 1.7, delay: 5, duration: 15, ease: 'power1.in' }
+        { autoAlpha: 0, scale: 0.3, duration: 20 },
+        { autoAlpha: 1, scale: 1, delay: 5, duration: 15, ease: 'power1.in' }
       );
   
       thirdDivTimeline.fromTo(
@@ -63,11 +63,7 @@ function ScrollOneSection () {
         end: '+=350%',
         animation: masterTimeline,
         scrub: 2,
-        invalidateOnRefresh: true,
-        pinType: "fixed", 
-        pinSpacing: false
       });
-      ScrollTrigger.refresh();
     }, vodeoSection); // Scope animations to this component
   
     return () => ctx.revert(); // Cleanup animations on unmount
@@ -104,38 +100,34 @@ function ScrollOneSection () {
       </div>
 
       <section
-        className='margintop z-40 relative bg-red-800 w-full h-screen'
+        className='margintop z-40 relative w-full h-screen graybg'
         ref={textanimationPin}
       >
         <div className='z-50 relative w-full h-screen'>
-          <div className='z-50 absolute inset-0 flex justify-center items-center'>
+          <div className='left-[10vw] lg:left-[28vw] z-50 absolute inset-0 flex justify-center items-center w-[80vw] lg:w-[44vw] text-xs lg:text-3xl'>
             <h1
-              className='font-IvyOraheadline2 text-xs lg:text-4xl text-center heading'
+              className='font-IvyOraheadline2 text-3xl lg:text-5xl text-center leading-10'
               ref={firstDiv}
             >
-              <span>A membership community for the</span>
-              <br />
-              <span>
-                future <span className='font-IvyOraheadline'>
-                  of pediatric dentistry
-                </span>
-              </span>
+             Building the largest network of independent pediatric dentists
+
+
+
             </h1>
           </div>
 
-          <div className='z-50 absolute inset-0 flex justify-center items-center'>
+          <div className='left-[10vw] lg:left-[28vw] z-50 absolute inset-0 flex justify-center items-center w-[80vw] lg:w-[44vw] text-xs lg:text-3xl'>
             <h1
-              className='font-IvyOraheadline2 text-center heading'
+              className='font-IvyOraheadline2 text-3xl lg:text-5xl text-center heading'
               ref={secondDiv}
             >
-              <span>Here to provide pediatric dentists access to</span>
-              <br />
-              <span>meaningful savings and a collaborative community.</span>
+              with unmatched buying power
+
             </h1>
           </div>
 
           <div
-            className='z-0 absolute inset-0 flex justify-center items-center'
+            className='z-0 absolute inset-0 flex justify-center items-center w-screen'
             ref={thirdDiv}
           >
             <Image

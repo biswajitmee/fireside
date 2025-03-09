@@ -251,7 +251,7 @@ function ScrollTwoSection() {
         <div className="bgAnimation" ref={bgbackdiv}>
           <div className="imgOverlay" ref={imgMove}></div>
           <div className="titleAbsolute">
-            <h1 ref={tltext1} className="font-InterTight lineheightfix">
+            <h1 ref={tltext1} className="font-InterTight text-3xl lg:text-5xl lineheightfix">
               Running a dental practice <br />
               can be
               <span className="font-IvyOraheadline">
@@ -262,7 +262,7 @@ function ScrollTwoSection() {
 
           <div className="titleAbsolute2">
             <div className="movingtext">
-              <h1 ref={tltext2} className="font-InterTight">
+              <h1 ref={tltext2} className="font-InterTight text-3xl lg:text-5xl">
                 with <span className="font-IvyOraheadline">endless</span> <br />
                 responsiblites.
               </h1>
